@@ -1,0 +1,47 @@
+#stickerLayer {
+  position: absolute;
+  inset: -60px;
+  z-index: 1;
+  pointer-events: none;
+  overflow: visible;
+}
+.stk {
+  position: absolute;
+  filter: blur(1.5px);
+  opacity: 0.55;
+  transition:
+    filter 0.4s,
+    opacity 0.4s,
+    transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  pointer-events: all;
+  cursor: default;
+  animation: stkFloat linear infinite;
+  will-change: transform;
+}
+.stk svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.stk:hover {
+  filter: blur(0) !important;
+  opacity: 0.92 !important;
+  z-index: 10;
+  transform: scale(1.22) rotate(0deg) !important;
+}
+@keyframes stkFloat {
+  0% {
+    transform: translateY(0) rotate(var(--r));
+  }
+  50% {
+    transform: translateY(var(--dy)) rotate(calc(var(--r) + 3deg));
+  }
+  100% {
+    transform: translateY(0) rotate(var(--r));
+  }
+}
+@media (max-width: 768px) {
+  .stk {
+    display: none;
+  }
+}

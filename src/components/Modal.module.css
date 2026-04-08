@@ -1,0 +1,107 @@
+#overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transition: background 0.35s;
+  padding: 16px;
+}
+#overlay.open {
+  background: rgba(0, 0, 0, 0.28);
+  pointer-events: all;
+  backdrop-filter: blur(6px);
+}
+#mbox {
+  background: var(--bg);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 14px;
+  max-width: 540px;
+  width: 100%;
+  max-height: 88vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: none;
+  pointer-events: none;
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.2);
+}
+#overlay.open #mbox {
+  opacity: 1;
+  transform: scale(1);
+  transition:
+    opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.44s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: all;
+}
+#overlay.closing #mbox {
+  opacity: 0;
+  transform: scale(0.58);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+#mtbar {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 11px 15px 9px;
+  border-bottom: 1px solid var(--block-border);
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 14px 14px 0 0;
+  user-select: none;
+}
+.macBtn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition:
+    filter 0.15s,
+    transform 0.15s;
+}
+.macBtn:hover {
+  filter: brightness(0.8);
+  transform: scale(1.1);
+}
+#mcClose {
+  background: #ff5f56;
+}
+#mc-min {
+  background: #ffbd2e;
+}
+#mc-max {
+  background: #27c93f;
+}
+#mtbarTitle {
+  flex: 1;
+  text-align: center;
+  font-size: 11px;
+  color: var(--fg2);
+  letter-spacing: 0.07em;
+  margin-right: 52px;
+}
+#mbodyWrap {
+  padding: 22px 26px;
+  overflow-y: auto;
+  flex: 1;
+}
+#mbody {
+  font-size: 12px;
+  color: var(--fg2);
+  line-height: 1.9;
+}
+@keyframes ripple-anim {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,97 @@
+#bar {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  background: var(--glass-bar);
+  border: 1px solid var(--glass-bar-border);
+  border-radius: 60px;
+  backdrop-filter: blur(32px) saturate(200%);
+  -webkit-backdrop-filter: blur(32px) saturate(200%);
+  box-shadow:
+    0 8px 32px var(--shadow),
+    0 1px 0 rgba(255, 255, 255, 0.65) inset;
+  padding: 7px 12px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  transition:
+    background 0.5s,
+    border-color 0.5s,
+    padding 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+    gap 0.35s;
+  animation: barIn 0.6s 0.3s ease both;
+}
+#bar:hover {
+  padding: 7px 22px;
+  gap: 5px;
+  box-shadow:
+    0 12px 40px var(--shadow-md),
+    0 1px 0 rgba(255, 255, 255, 0.65) inset;
+}
+@keyframes barIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 16px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+.bb {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: var(--fg2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.bb:hover {
+  background: rgba(128, 120, 110, 0.13);
+  color: var(--fg);
+  transform: scale(1.15) translateY(-1px);
+}
+.bb:active {
+  transform: scale(0.9);
+}
+.bdiv {
+  width: 1px;
+  height: 20px;
+  background: var(--fg3);
+  opacity: 0.22;
+  margin: 0 3px;
+  flex-shrink: 0;
+}
+.btt {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--fg);
+  color: var(--bg);
+  font-size: 9px;
+  font-family: var(--font-mono);
+  padding: 4px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: opacity 0.15s;
+}
+.bb:hover .btt {
+  opacity: 1;
+}
