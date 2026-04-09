@@ -64,7 +64,8 @@ export function AboutModalContent() {
             <span className={styles.sdot} /> Available for freelance
           </div>
           <p className={styles.mHdln}>
-            Crafting <em>digital experiences</em> that feel alive.
+            Transforming static ideas into <em>dynamic digital realities</em>{" "}
+            using modern technologies.
           </p>
         </div>
       </div>
@@ -76,7 +77,7 @@ export function AboutModalContent() {
       {/* Timezone clocks */}
       <div style={{ display: "flex", gap: 8, marginTop: 14, flexWrap: "wrap" }}>
         {[
-          { label: "IST (Home)", timeRef: istTimeRef, dateRef: istDateRef },
+          { label: "IST (India)", timeRef: istTimeRef, dateRef: istDateRef },
           { label: "UTC", timeRef: utcTimeRef, dateRef: utcDateRef },
         ].map(({ label, timeRef, dateRef }) => (
           <div
@@ -92,11 +93,12 @@ export function AboutModalContent() {
           >
             <div
               style={{
-                fontSize: 8,
+                fontSize: 11,
+                fontWeight: 500,
                 letterSpacing: ".15em",
                 textTransform: "uppercase",
-                color: "var(--fg3)",
-                marginBottom: 4,
+                color: "var(--fg2)",
+                marginBottom: 1,
               }}
             >
               {label}
@@ -105,7 +107,7 @@ export function AboutModalContent() {
               ref={timeRef}
               style={{
                 fontFamily: "var(--font-serif)",
-                fontSize: "1.3rem",
+                fontSize: "1.5rem",
                 fontWeight: 300,
                 color: "var(--fg)",
                 lineHeight: 1,
@@ -115,7 +117,7 @@ export function AboutModalContent() {
             </div>
             <div
               ref={dateRef}
-              style={{ fontSize: 9, color: "var(--fg3)", marginTop: 2 }}
+              style={{ fontSize: 11.5, color: "var(--fg2)", marginTop: 4 }}
             >
               –
             </div>
@@ -204,8 +206,8 @@ export function ContactModalContent() {
     <>
       <p
         style={{
-          fontSize: 12,
-          color: "var(--fg2)",
+          fontSize: 13.5,
+          color: "var(--fg)",
           lineHeight: 1.8,
           marginBottom: 16,
         }}
@@ -228,7 +230,7 @@ export function ContactModalContent() {
         },
       ].map(({ label, value, href, key }) => (
         <div key={key} className={styles.mConField}>
-          <div className="m-con-field-icon">
+          <div className={styles.mConFieldIcon}>
             {key === "email" ? (
               <svg
                 width="14"
@@ -271,8 +273,8 @@ export function ContactModalContent() {
       ))}
       <p
         style={{
-          fontSize: 11,
-          color: "var(--fg3)",
+          fontSize: 12,
+          color: "var(--fg2)",
           fontStyle: "italic",
           marginTop: 8,
         }}

@@ -35,17 +35,17 @@ export default function Tray({ children }: Props) {
 
   return (
     <>
-    <div
-      id={`${styles.tray}`}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-    >
-      <Stickers />
-      <div id={styles.trayInner}
-      ref={ref}>
-        <div id={`${styles.grid}`}>{children}</div>
+      <div id={`${styles.tray}`}>
+        <Stickers />
+        <div
+          id={styles.trayInner}
+          ref={ref}
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
+        >
+          <div id={`${styles.grid}`}>{children}</div>
+        </div>
       </div>
-    </div>
     </>
   );
 }

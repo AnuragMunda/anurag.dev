@@ -5,10 +5,11 @@ export const PORTFOLIO = {
 
   about: {
     headline:
-      "Crafting digital experiences that feel alive — where form follows feeling.",
+      "Crafting <em>digital experiences</em> that feel alive - where form follows feeling.",
     bio: [
-      "I'm a design-minded engineer living at the intersection of code and craft. Based in San Francisco, I build products that feel as good as they look — every pixel purposeful, every interaction a story.",
-      "Currently leading design at Luminary Digital, shipping tools that help creatives work faster without thinking less.",
+      "A full-stack developer with 4+ years of experience and a blockchain soul, obsessed with building systems that are as secure as they are scalable.",
+      "I\'m an architect of the modern web, crafting end-to-end applications that span from the user's screen to the blockchain ledger.",
+      // "Currently leading design at Luminary Digital, shipping tools that help creatives work faster without thinking less.",
     ],
     // Replace with your actual photo URL or import
     avatar:

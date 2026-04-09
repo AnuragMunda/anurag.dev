@@ -162,7 +162,7 @@
 
 .name {
   font-size: 17px;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   font-weight: lighter;
 }
 
@@ -191,11 +191,11 @@
   display: flex;
   align-items: center;
   gap: 7px;
-  margin-top: -4px;
+  bottom: 0.1rem;
   font-size: 12px;
   color: var(--fg2);
   flex-shrink: 0;
-  position: relative;
+  position: absolute;
   z-index: 1;
 }
 .sdot {

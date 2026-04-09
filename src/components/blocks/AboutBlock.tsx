@@ -48,8 +48,7 @@ export default function AboutBlock({ onOpen, dark }: Props) {
           </div>
         </div>
         <p className={`${styles.bigText}`}>
-          Crafting <em>digital experiences</em> that feel alive — where form
-          follows feeling.
+          Transforming static ideas into <em>dynamic digital realities</em> using modern technologies.
         </p>
         {PORTFOLIO.available && (
           <div className={`${styles.avail}`}>
