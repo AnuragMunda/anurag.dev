@@ -37,7 +37,6 @@ export default function MusicBlock({ dark }: { dark: boolean }) {
     <div id={`${styles.bMusic}`} className={`${styles.blk}`}>
       <span
         className={`${styles.lbl}`}
-        style={dark ? { color: "var(--fg2)" } : {}}
       >
         Now Playing
       </span>

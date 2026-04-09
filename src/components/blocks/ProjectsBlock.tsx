@@ -92,7 +92,6 @@ export default function ProjectsBlock({ onOpenProject, dark }: Props) {
               </div>
               <span
                 className={`${styles.pdesc}`}
-                style={dark ? { color: "var(--fg2)" } : {}}
               >
                 {p.shortDesc}
               </span>

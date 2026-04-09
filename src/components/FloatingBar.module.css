@@ -42,7 +42,7 @@
 }
 .bb {
   position: relative;
-  width: 36px;
+  width: 2.8rem;
   height: 36px;
   border-radius: 50%;
   border: none;
@@ -52,7 +52,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 25px;
   transition:
     background 0.2s,
     color 0.2s,
@@ -69,7 +69,7 @@
 .bdiv {
   width: 1px;
   height: 20px;
-  background: var(--fg3);
+  background: var(--fg);
   opacity: 0.22;
   margin: 0 3px;
   flex-shrink: 0;
@@ -81,7 +81,7 @@
   transform: translateX(-50%);
   background: var(--fg);
   color: var(--bg);
-  font-size: 9px;
+  font-size: 11px;
   font-family: var(--font-mono);
   padding: 4px 8px;
   border-radius: 6px;
