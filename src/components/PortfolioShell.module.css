@@ -71,7 +71,7 @@
   align-items: center;
   gap: 16px;
   width: 100%;
-  max-width: 1040px;
+  max-width: 70%;
   padding: 28px 22px 100px;
   height: 100dvh;
   margin: 0 auto;
@@ -125,10 +125,24 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
+  .root {
+    overflow: hidden;
+  }
   #app {
     height: auto;
     min-height: 100dvh;
-    padding: 16px 10px 88px;
+    min-width: 97%;
+  }
+}
+
+@media (max-width: 768px) {
+  .root {
+    overflow: hidden;
+  }
+  #app {
+    height: auto;
+    min-height: 100dvh;
+    min-width: 100%;
   }
 }

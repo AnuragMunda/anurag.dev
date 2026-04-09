@@ -78,10 +78,40 @@
   }
 }
 
-@media (max-width: 860px) {
+/* @media (max-width: 860px) {
   #grid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5, auto);
+  }
+} */
+
+@media (max-width: 860px) {
+  #tray {
+    flex: none;
+    height: auto;
+    overflow: visible;
+  }
+  
+  #trayInner {
+    height: auto;
+    overflow: visible;
+    border-radius: 18px;
+  }
+
+  #grid {
+    /* Switch to 1 column */
+    grid-template-columns: 1fr; 
+    /* Set rows to auto so they wrap based on content */
+    grid-template-rows: auto;   
+    padding: 10px;
+    gap: 9px;
+  }
+
+  /* CRITICAL: Reset all grid items to span the full single column */
+  #grid > * {
+    grid-column: span 1 !important;
+    grid-row: auto !important;
+    min-height: 150px; /* Optional: ensures items have some height on mobile */
   }
 }
 
@@ -91,7 +121,7 @@
     height: auto;
     overflow: visible;
   }
-  #tray-inner {
+  #trayInner {
     height: auto;
     overflow: visible;
     border-radius: 18px;
