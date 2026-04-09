@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Anurag Munda — Design × Code",
+  title: "Anurag Munda - Design × Code",
   description:
     "Portfolio of Anurag Munda, a design-minded engineer crafting digital experiences.",
   openGraph: {
-    title: "Anurag Munda — Portfolio",
+    title: "Anurag Munda - Portfolio",
     description: "Crafting digital experiences that feel alive.",
     type: "website",
   },

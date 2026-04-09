@@ -23,12 +23,15 @@
   height: 100%;
   display: block;
 }
-.stk:hover {
-  filter: blur(0) !important;
-  opacity: 0.92 !important;
-  z-index: 10;
-  transform: scale(1.22) rotate(0deg) !important;
+@media (hover: hover) {
+  .stk:hover {
+    filter: blur(0) !important;
+    opacity: 0.92 !important;
+    z-index: 10;
+    transform: scale(1.22) rotate(0deg) !important;
+  }
 }
+
 @keyframes stkFloat {
   0% {
     transform: translateY(0) rotate(var(--r));
