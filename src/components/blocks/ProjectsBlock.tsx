@@ -79,22 +79,20 @@ export default function ProjectsBlock({ onOpenProject, dark }: Props) {
                   >
                     <GhIcon />
                   </a>
-                  <a
-                    href={p.demo}
-                    target="_blank"
-                    rel="noopener"
-                    className={`${styles.plink}`}
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <LinkIcon />
-                  </a>
+                  {p.demo !== "" && (
+                    <a
+                      href={p.demo}
+                      target="_blank"
+                      rel="noopener"
+                      className={`${styles.plink}`}
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <LinkIcon />
+                    </a>
+                  )}
                 </div>
               </div>
-              <span
-                className={`${styles.pdesc}`}
-              >
-                {p.shortDesc}
-              </span>
+              <span className={`${styles.pdesc}`}>{p.shortDesc}</span>
             </div>
           ))}
         </div>

@@ -20,6 +20,19 @@ export const PORTFOLIO = {
 
   projects: [
     {
+      id: "x402",
+      name: "402 Forbidden",
+      tag: "Web + Blockchain",
+      shortDesc: 'A cryptographically secured "Password Heist" arena game on Solana.',
+      fullDesc: `402 Forbidden is a Secret logic arena game on Solana. Players compete against a cryptographically-secured AI Guardian
+      that protects a growing USDC vault, with the prize logic and fee distribution handled
+      by the modular x402 V2 protocol.`,
+      fullDesc2: "Stack: Next.js, TypeScript, MongoDB, Tailwind, Express, Node.js, Solana, Gemini API, x402 protocol, Anchor, Rust",
+      github: "https://github.com/AnuragMunda/402Forbidden",
+      demo: "",
+      color: "#5eaaf5",
+    },
+    {
       id: "eitm",
       name: "Explain it to me",
       tag: "Web",
@@ -99,9 +112,21 @@ export const PORTFOLIO = {
   ],
 
   experience: [
-    { period: "Oct'24–Nov'25", role: "Freelance Web3 Developer", company: "Self employed" },
-    { period: "Dec'21–Apr'24", role: "Full-stack Blockchain Developer", company: "Vegavid Technology" },
-    { period: "Feb'21–Jun'21", role: "Programmer Analyst Trainee", company: "Cognizant" },
+    {
+      period: "Oct'24–Nov'25",
+      role: "Freelance Web3 Developer",
+      company: "Self employed",
+    },
+    {
+      period: "Dec'21–Apr'24",
+      role: "Full-stack Blockchain Developer",
+      company: "Vegavid Technology",
+    },
+    {
+      period: "Feb'21–Jun'21",
+      role: "Programmer Analyst Trainee",
+      company: "Cognizant",
+    },
   ],
 
   contact: {
@@ -116,7 +141,8 @@ export const PORTFOLIO = {
     blog: "https://anuragmunda.medium.com/",
     discord: "https://discord.com/users/anurag_munda",
     telegram: "https://t.me/SheniGun",
-    resume: "https://drive.google.com/file/d/1KjmILT2Q5a0PuaiQZEjoeSB8_yRyxarE/view?usp=sharing",
+    resume:
+      "https://drive.google.com/file/d/1KjmILT2Q5a0PuaiQZEjoeSB8_yRyxarE/view?usp=sharing",
   },
 
   music: {

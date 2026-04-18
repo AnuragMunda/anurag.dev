@@ -414,14 +414,16 @@ export function ProjectModalContent({ projectId }: { projectId: string }) {
         >
           <GhIcon /> View on GitHub
         </a>
-        <a
-          href={project.demo}
-          target="_blank"
-          rel="noopener"
-          className={styles.mPlink}
-        >
-          <LinkIcon /> Live Demo
-        </a>
+        {project.demo !== "" && (
+          <a
+            href={project.demo}
+            target="_blank"
+            rel="noopener"
+            className={styles.mPlink}
+          >
+            <LinkIcon /> Live Demo
+          </a>
+        )}
       </div>
     </div>
   );

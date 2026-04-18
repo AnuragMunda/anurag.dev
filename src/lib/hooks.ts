@@ -87,7 +87,7 @@ export function useTilt(ref: React.RefObject<HTMLElement>) {
 
 // ── Modal open state ──────────────────────────────────────
 export type ModalKey = "about" | "skills" | "experience" | "contact" | null;
-export type ProjectKey = "eitm" | "soltip" | "blockmeter" | null;
+export type ProjectKey = "x402" | "eitm" | "soltip" | "blockmeter" | null;
 
 export function useModal() {
   const [activeModal, setActiveModal] = useState<ModalKey>(null);
