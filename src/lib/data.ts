@@ -29,7 +29,7 @@ export const PORTFOLIO = {
       by the modular x402 V2 protocol.`,
       fullDesc2: "Stack: Next.js, TypeScript, MongoDB, Tailwind, Express, Node.js, Solana, Gemini API, x402 protocol, Anchor, Rust",
       github: "https://github.com/AnuragMunda/402Forbidden",
-      demo: "",
+      demo: "https://402forbidden.vercel.app/",
       color: "#5eaaf5",
     },
     {
@@ -142,7 +142,7 @@ export const PORTFOLIO = {
     discord: "https://discord.com/users/anurag_munda",
     telegram: "https://t.me/SheniGun",
     resume:
-      "https://drive.google.com/file/d/1KjmILT2Q5a0PuaiQZEjoeSB8_yRyxarE/view?usp=sharing",
+      "https://drive.google.com/file/d/15P_HRhIVAHiXpmIaU6ayrFniPP6df_51/view?usp=sharing",
   },
 
   music: {
