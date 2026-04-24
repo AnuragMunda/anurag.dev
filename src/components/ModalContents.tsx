@@ -414,7 +414,7 @@ export function ProjectModalContent({ projectId }: { projectId: string }) {
         >
           <GhIcon /> View on GitHub
         </a>
-        {project.demo !== "" && (
+        {project.demo && (
           <a
             href={project.demo}
             target="_blank"

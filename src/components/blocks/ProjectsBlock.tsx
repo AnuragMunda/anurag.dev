@@ -79,7 +79,7 @@ export default function ProjectsBlock({ onOpenProject, dark }: Props) {
                   >
                     <GhIcon />
                   </a>
-                  {p.demo !== "" && (
+                  {p.demo && (
                     <a
                       href={p.demo}
                       target="_blank"
